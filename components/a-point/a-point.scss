@@ -1,0 +1,15 @@
+.a-point {
+  display: grid;
+  align-items: center;
+  width: 100%;
+  height: rem(80);
+  border: rem(1) solid #000;
+
+  &__icon {
+    font-size: rem(40);
+  }
+
+  &.clicked {
+    pointer-events: none;
+  }
+}

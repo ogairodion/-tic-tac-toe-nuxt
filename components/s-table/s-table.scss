@@ -1,0 +1,60 @@
+.s-table {
+  width: rem(600);
+  text-align: center;
+  padding: rem(20);
+  margin: 0 auto;
+
+  &__title {
+    font-size: rem(30);
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-bottom: rem(20);
+  }
+
+  &__points {
+    width: rem(300);
+    display: grid;
+    grid-template-columns: repeat(3, 3fr);
+    padding: rem(20);
+    margin: rem(40) auto 0;
+  }
+
+  &__player {
+    font-size: rem(20);
+
+    strong {
+      font-weight: 600;
+      text-transform: uppercase;
+    }
+  }
+
+  &__win {
+    font-size: rem(30);
+    font-weight: 600;
+    margin-top: rem(30);
+  }
+
+  .game-over {
+    position: relative;
+    pointer-events: none;
+
+    &::after {
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background: #fff;
+      opacity: 0.8;
+    }
+  }
+
+  &__btn {
+    font-size: rem(18);
+    background: #000;
+    color: #fff;
+    border-radius: rem(8);
+    cursor: pointer;
+    margin-top: rem(30);
+    padding: rem(6) rem(12);
+  }
+}
